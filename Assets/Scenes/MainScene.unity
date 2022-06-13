@@ -817,19 +817,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1694759139}
         m_TargetAssemblyTypeName: NumberManager, Assembly-CSharp
-        m_MethodName: shuffleNumbers
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1694759139}
-        m_TargetAssemblyTypeName: NumberManager, Assembly-CSharp
-        m_MethodName: setNumbers
+        m_MethodName: resetLights
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4273,16 +4261,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b4fb626d914d142ab4d8925a132c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText1: {fileID: 2069010292}
-  buttonText2: {fileID: 2024662104}
-  buttonText3: {fileID: 1263413726}
-  buttonText4: {fileID: 1978555108}
-  buttonText5: {fileID: 1856045470}
-  buttonText6: {fileID: 831896116}
-  buttonText7: {fileID: 1840158216}
-  buttonText8: {fileID: 596682898}
-  buttonText9: {fileID: 1792234788}
-  buttonText10: {fileID: 2131571253}
+  button1: {fileID: 615062020}
+  button2: {fileID: 1105741404}
+  button3: {fileID: 1427195582}
+  button4: {fileID: 934554482}
+  button5: {fileID: 1765157342}
+  button6: {fileID: 2007410634}
+  button7: {fileID: 1324952883}
+  button8: {fileID: 903706836}
+  button9: {fileID: 890935468}
+  button10: {fileID: 23263041}
   scoreLabel: {fileID: 1545504971}
 --- !u!4 &1694759140
 Transform:
