@@ -73,18 +73,35 @@ public class NumberManager : MonoBehaviour
     }
 
     public void resetLights() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.Length; i++) {
             buttons[i].GetComponent<Image>().color = new Color32(255, 255, 255, 255);
             numbers[i] = 1;
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < numbers.Length; i++) {
             // output 0 ~ 1
             randomNumber = UnityEngine.Random.Range(0, 2);
 
-            if (randomNumber == 1) {
+            if (randomNumber == 1 && numbers[i] == 1) {
                 buttons[i].GetComponent<Image>().color = new Color32(100, 0, 200, 255);
                 numbers[i] = 0;
+            } else if (randomNumber == 1 && numbers[i] == 0) {
+                buttons[i].GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                numbers[i] = 1;
+            }
+
+            if (randomNumber == 1) {
+                for (int j = 0; j < numbers.Length; j++) {
+                    if (relasionshipNumbers[i, j] == 1) {
+                        if (numbers[j] == 1) {
+                            buttons[j].GetComponent<Image>().color = new Color32(100, 0, 200, 255);
+                            numbers[j] = 0;
+                        } else if (numbers[j] == 0) {
+                            buttons[j].GetComponent<Image>().color = new Color32(255, 255, 255, 255);
+                            numbers[j] = 1;
+                        }
+                    }
+                }
             }
         }
 
